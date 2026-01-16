@@ -1,0 +1,33 @@
+.container-fluid{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(255, 177, 161);
+    
+
+}
+.navbar-brand{
+    float:left;
+    text-decoration:none;
+    color:black;
+    margin-top:10px;
+    
+}
+
+ul li{
+    list-style:none;
+    float:left;
+    justify-content:space-around;
+    margin-right:20px;
+    
+}
+.nav-link{
+    text-decoration:none;
+    color:black;
+}
+h3{
+    color:white;
+}
+img:hover{
+    transform: scale(1.1);
+    transition: filter 0.3s ease ;
+}

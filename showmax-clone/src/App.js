@@ -1,17 +1,20 @@
 
 import './App.css';
 import Movies from './Movies';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import Homefile from './Homefile';
+import TvShows from './TvShows';
 
 function App() {
   return (
     <div className="App">
-     
-      <h1>Showmax Clone</h1>
-      <form>
-        <input type="search" placeholder="search for movies or series" className="search" />
-        <input type="submit" value="Search" className="search-button"/>
-      </form>
-      <Movies />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homefile />} />
+        <Route path="/movies" element={<Movies />} />
+        <Route path="/tv-shows" element={<TvShows />} />
+      </Routes>
     </div>
   );
 }
