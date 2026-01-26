@@ -1,10 +1,11 @@
 
 import './App.css';
-import Movies from './Movies';
-import { Routes, Route } from 'react-router-dom';
+import Kids from './Kids';
 import Navbar from './Navbar';
 import Homefile from './Homefile';
 import TvShows from './TvShows';
+
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homefile />} />
-        <Route path="/movies" element={<Movies />} />
+        <Route path="/kids" element={<Kids />} />
         <Route path="/tv-shows" element={<TvShows />} />
       </Routes>
     </div>
