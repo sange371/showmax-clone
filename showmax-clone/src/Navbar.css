@@ -1,7 +1,7 @@
 .container-fluid{
     display:flex;
     justify-content:space-between;
-    background-color: rgb(37, 7, 1);
+    background-color: rgb(53, 12, 4);
     padding:10px
     
 
@@ -27,9 +27,23 @@ ul li{
     color:white;
 }
 h3{
-    color:white;
+    color:white !important;
 }
 img:hover{
     transform: scale(1.1);
     transition: filter 0.3s ease ;
+}
+.search-button{
+    padding:8px 12px;
+    background-color:rgb(63, 12, 2) !important;
+    color:white;
+    
+    
+}
+.search-button:hover{
+    background-color: rgb(119, 73, 64) !important;;
+}
+.search-input{
+    padding:10px 20px;
+   
 }

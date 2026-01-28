@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark ">
       <div className="container-fluid d-flex justify-content-between">
         <Link className="navbar-brand" to="/">Zusange Mbaleki</Link>
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -18,7 +18,7 @@ export default function Navbar() {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
         
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
@@ -32,6 +32,10 @@ export default function Navbar() {
               <Link className="nav-link active" to="/tv-shows">TV Shows</Link>
             </li>
           </ul>
+          <form>
+            <input type="text" placeholder="Search" className="search-input"/>
+            <button type="submit" className="search-button">Go</button>
+          </form>
         </div>
       </div>
     </nav>
